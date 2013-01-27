@@ -1,0 +1,5 @@
+.DS_Store
+war/WEB-INF/classes/
+build/
+.gradle/
+
