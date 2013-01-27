@@ -1,10 +1,13 @@
 package idrabenia.webtest.domain
 
 import javax.validation.constraints.NotNull
-import javax.validation.constraints.Min
+
 import javax.validation.constraints.Size
 import org.hibernate.validator.constraints.NotEmpty
 import idrabenia.webtest.ui.converters.DateFormat
+
+import idrabenia.webtest.ui.validators.DobConstraint
+import idrabenia.webtest.ui.validators.PhoneConstraint
 
 /**
  * 
@@ -24,5 +27,11 @@ class User {
 
     @NotNull
     @DateFormat
+    @DobConstraint
     Date birthDate
+
+    @NotNull
+    @NotEmpty
+    @PhoneConstraint
+    String phoneNumber
 }

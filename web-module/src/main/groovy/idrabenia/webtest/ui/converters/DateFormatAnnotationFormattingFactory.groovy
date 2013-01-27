@@ -21,7 +21,7 @@ class DateFormatAnnotationFormattingFactory implements AnnotationFormatterFactor
     }
 
     private SimpleDateFormat makeDateFormatter() {
-        return new SimpleDateFormat("yyyy.dd.MM")
+        return new SimpleDateFormat("dd.MM.yyyy")
     }
 
     Parser<?> getParser(DateFormat a, Class<?> aClass) {

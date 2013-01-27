@@ -39,6 +39,12 @@
             <span class="help-inline"></span>
         </div>
 
+        <div class="control-group">
+            <label for="phoneNumberField">Phone Number</label>
+            <input id="phoneNumberField" name="phoneNumber" type="text" class="required" value=""/>
+            <span class="help-inline"></span>
+        </div>
+
         <label></label>
         <input type="submit" value="submit" class="btn"/>
     </fieldset>
